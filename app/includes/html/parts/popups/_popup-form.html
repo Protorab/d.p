@@ -1,0 +1,41 @@
+<div id="modal__form" class="modal animate__animated">
+  <div class="modal-overlay close__popup"></div>
+  <div class="modal-content animate__animated">
+    <div class="close close__popup">
+      <span></span>
+      <span></span>
+    </div>
+    <form class="send__form modal-form">
+      <legend class="modal-form__title">Заголовок формы</legend>
+      <input
+        type="text"
+        class="modal-form__input"
+        required="required"
+        placeholder="Введите имя"
+        name="name"
+      />
+      <input
+        type="tel"
+        class="modal-form__input"
+        required="required"
+        placeholder="Введите телефон"
+        name="phone"
+      />
+      <input
+        type="email"
+        class="modal-form__input"
+        required="required"
+        placeholder="Введите e-mail"
+        name="E-mail"
+      />
+      <textarea
+        name="message"
+        placeholder="Введите текст"
+        cols="30"
+        rows="10"
+        class="modal-form__textarea"
+      ></textarea>
+      <input type="submit" class="btn btn__modal" />
+    </form>
+  </div>
+</div>
