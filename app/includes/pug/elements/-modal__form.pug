@@ -1,32 +1,32 @@
-#modal__form.modal.animate__animated
-  .modal-overlay.close__popup
-  .modal-content.animate__animated
-    .close.close__popup
-      span
-      span
-    form.send__form.modal-form(action="#")
-      fieldset.modal-form__content
-        legend.modal-form__title Заголовок формы      
-        input.modal-form__input(
+#modal__form.modal
+  .modal__body
+    
+    form.modal__form.modal__content(action="#")
+      a.modal__close.close__modal(href="#",role="button") 
+        span
+        span
+      fieldset.modal__form-content
+        legend.modal__form-title Заголовок формы      
+        input.modal__form-input(
           required,
           placeholder="Введите имя",
           type="text",
           name="name",
           )
-        input.modal-form__input(
+        input.modal__form-input(
           required,
           placeholder="Введите телефон",
           type="tel",
           name="phone",
           )
-        input.modal-form__input(
+        input.modal__form-input(
           required,
           placeholder="Введите e-mail",
           type="email",
           name="E-mail")
-        textarea.modal-form__textarea(
+        textarea.modal__form-textarea(
           name="Сообщение",
           cols="30",
           rows="10",
           placeholder="Введите текст")
-        input(type="submit").btn.btn__modal      
+        button.btn(type='submit').btn.modal__btn Отправить 

@@ -213,12 +213,14 @@ body {
 	align-items: flex-start;
 	position: relative;
 	overflow-x: hidden;
+
+	&.__fixed {
+		width: 100%;
+		overflow: hidden;
+	}
 }
 
-.__fixed {
-	width: 100%;
-	overflow: hidden;
-}
+
 
 footer,
 header,
